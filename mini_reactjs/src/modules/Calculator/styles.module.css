@@ -23,7 +23,7 @@
 
 .calculator_light {
     color: black;
-    background: white;
+    background: rgb(105, 180, 139);
 }
 
 .cal_top {
@@ -31,7 +31,7 @@
 }
 
 .cal_top_dark {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .cal_top_light {
@@ -47,7 +47,6 @@
 .cal_bottom {
     flex: 2;
     display: flex;
-    background: #121727;
     flex-direction: column;
     justify-content: center;
     border-radius: 25px;
@@ -60,7 +59,7 @@
 }
 
 .cal_bottom_light {
-    background: #121727;
+    background: #80b9a4;
 }
 
 .cal_bottom_item {
@@ -77,7 +76,6 @@
     width: 70px;
     display: flex;
     align-self: center;
-    background: #22242c;
     border-radius: 15px;
 }
 
@@ -86,7 +84,7 @@
 }
 
 .switch_light {
-    background: #22242c;
+    background: #52837c;
 }
 
 .moon_dark {
@@ -94,24 +92,34 @@
 }
 
 .moon_light {
-    color: white;
+    color: rgb(139, 184, 169);
 }
 
 .sun_dark {
-    color: rgb(155, 148, 148);
+    color: rgb(148, 155, 153);
 }
 
 .sun_light {
-    color: rgb(155, 148, 148);
+    color: rgb(181, 239, 243);
 }
 
 .display {
     flex: 1;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: column;
     padding-inline: 10px;
+    border-radius: 10px;
+}
+
+.display_dark {
+    border: 5px solid #0d1222;
+
+}
+
+.display_light {
+    border: 5px solid #6bd4ac;
 }
 
 .switch>i {
@@ -122,18 +130,18 @@
 .buttonCover {
     flex: 1;
     text-align: center;
-    background: black;
     border: none;
     border-radius: 5px;
-    box-shadow: -1px -5px 10px 2px rgb(31, 28, 28);
+    background: rgb(27, 24, 24);
+    box-shadow: 0px 0px 2px 1px rgb(27, 28, 31);
 }
 
 .buttonCover_dark {
-    background: black;
-    box-shadow: -1px -5px 10px 2px rgb(31, 28, 28);
+    background: rgb(27, 22, 22);
+    box-shadow: 5px 5px 10px 2px rgb(44, 41, 41);
 }
 
 .buttonCover_light {
-    background: black;
-    box-shadow: -1px -5px 10px 2px rgb(31, 28, 28);
+    background: rgb(17, 19, 18);
+    box-shadow: 5px 5px 10px 2px rgb(33, 37, 36);
 }
