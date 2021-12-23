@@ -1,4 +1,5 @@
 import Calculator from "../modules/Calculator";
+import Colorful from "../modules/Colorful";
 import HomePage from "../pages/home";
 
 const routes = [
@@ -12,6 +13,12 @@ const routes = [
     name: 'Calculator page',
     path: 'calculator',
     element: Calculator,
+    
+  },
+  {
+    name: 'Colorful page',
+    path: 'colorful',
+    element: Colorful,
     
   },
 ]

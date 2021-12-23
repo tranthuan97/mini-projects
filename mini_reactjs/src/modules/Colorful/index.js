@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'bootstrap';
+import { Button } from 'antd';
 const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
 
-const Colorfull = props => {
+const Colorful = props => {
   const [colorsList, setColorsList] = React.useState([])
   const index = colorsList.length > 0 ? colorsList.length - 1 : 0;
   const count = React.useRef(index)
@@ -13,7 +13,7 @@ const Colorfull = props => {
     // Đảo ngược và tìm [max] màu gần nhất cùng dãy màu
     const maxItem = [...list].reverse().splice(0, maxItemsSameTime);
     const isMaxCurrentColors = maxItem.length === maxItemsSameTime && maxItem.every(x => x === colors[colorIndex]);
-    
+
     return isMaxCurrentColors;
   }
 
@@ -45,7 +45,7 @@ const Colorfull = props => {
     const local = localStorage.getItem('colorsList');
     if (local) {
       const list = JSON.parse(local);
-      const colorIndex = colors.indexOf(Array.from(list).slice(-1)[0]);
+      const colorIndex = colors.indexOf(list[list.length - 1]);
       const isMax = checkIsMaxColors(list, colorIndex);
       count.current = isMax ? colorIndex + 1 : colorIndex;
       setColorsList(list);
@@ -77,8 +77,8 @@ const Colorfull = props => {
   )
 };
 
-Colorfull.propTypes = {
-  
+Colorful.propTypes = {
+
 };
 
-export default Colorfull;
+export default Colorful;

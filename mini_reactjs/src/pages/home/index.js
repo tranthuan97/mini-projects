@@ -6,13 +6,14 @@ const HomePage = props => {
   return (
     <div>
       <div>Navigate to exac page</div>
-      <Link to="/calculator">Calculator</Link>
+      <div> <Link to="/calculator">Calculator</Link></div>
+      <div><Link to="/colorful">Colorful</Link></div>
     </div>
   );
 };
 
 HomePage.propTypes = {
-  
+
 };
 
 export default HomePage;
