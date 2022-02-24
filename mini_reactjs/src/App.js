@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Todo from './modules/Todo';
+import Todo2 from './modules/Todo2';
 import routes from './routes';
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
   return (
     <div>
       <Routes>
-        {routes.map(renderRoute)}
+        {/* {routes.map(renderRoute)} */}
+        <Route path="/" element={<Todo2 />} />
       </Routes>
     </div>
   );
